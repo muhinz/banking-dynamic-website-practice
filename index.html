@@ -10,18 +10,23 @@
 <body>
    <header>
         <h1 class="text-5xl text-center mt-6">Welcome To 
-        <span class="font-semibold text-fuchsia-500	">Baaper Bank</span>!!!</h1> 
+        <span class="font-semibold text-blue-500	">Baaper Bank</span>!!!</h1> 
    </header>
    <main>
-    <section class="my-12">
+    <section class="my-20">
         <div class="container mx-auto">
-            <div class="bg-fuchsia-200 mx-60 px-20 py-10">
-                <h3 class="text-3xl font-semibold py-4">Please login</h3>
-                <div class="block">
-                    <input class="w-9/12 mb-2 p-1 rounded" type="email" name="" id="user-email" placeholder="Enter your email">
-                    <input class="w-9/12 mb-2 p-1 rounded" type="password" name="" id="user-password" placeholder="Enter password">
+            <div class="grid grid-cols-2 ">
+                <div class="bg-blue-300 p-20 border-2 border-blue-700">
+                    <h3 class="text-3xl font-semibold py-4">Please login</h3>
+                    <div class="block">
+                        <input class="w-9/12 mb-2 p-1 rounded" type="email" name="" id="user-email" placeholder="Enter your email">
+                        <input class="w-9/12 mb-2 p-1 rounded" type="password" name="" id="user-password" placeholder="Enter password">
+                    </div>
+                    <button id="btn-login" class="bg-blue-600 duration-700 hover:bg-white text-white hover:text-blue-500 px-6 py-2 rounded-lg border-blue-700 font-medium mt-2 hover:shadow-lg">Log In</button>
                 </div>
-                <button id="btn-login" class="bg-fuchsia-500 duration-700 hover:bg-white text-white hover:text-fuchsia-500 px-6 py-2 rounded-lg border-fuchsia-700 font-medium mt-2 hover:shadow-lg">Log In</button>
+                <div>
+                    <img class="w-100" src="images/bank.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>

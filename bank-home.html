@@ -11,40 +11,48 @@
 <body>
     <header>
         <h1 class="text-5xl text-center mt-6">Let's Get Some 
-        <span class="font-semibold text-fuchsia-600	">Moooney</span>!!!</h1> 
+        <span class="font-semibold text-blue-600	">Moooney</span>!!!</h1> 
    </header>
    <main>
-        <section class="mt-12">
+    <section>
+        <div class="container mx-auto"> 
+            <div class="w-100 flex justify-center">
+                <img src="images/grafika_banking.png" alt="">
+            </div>
+        </div>
+    </section>
+        <section class="mt-2">
             <div class="container mx-auto">
                 <div class="grid grid-cols-3 gap-4">
-                    <div class="bg-fuchsia-500 p-20 rounded-lg">
+                    <div class="bg-blue-500 p-20 rounded-lg">
                         <h2 class="font-medium text-3xl text-white mb-2">Deposit</h2>
                         <h4 class="font-medium text-5xl text-white">$<span id="deposit-total">00</span></h4>
                     </div>
-                    <div class="bg-fuchsia-600 p-20 rounded-lg">
+                    <div class="bg-blue-600 p-20 rounded-lg">
                         <h2 class="font-medium text-3xl text-white mb-2">Withdraw</h2>
-                        <h4 class="font-medium text-5xl text-white">$00</h4>
+                        <h4 class="font-medium text-5xl text-white">$<span id="withdraw-total">00</span></h4>
                     </div>
-                    <div class="bg-fuchsia-700 p-20 rounded-lg">
+                    <div class="bg-blue-700 p-20 rounded-lg">
                         <h2 class="font-medium text-3xl text-white mb-2">Total Balance</h2>
                         <h4 class="font-medium text-5xl text-white">$<span id="balance-total">1140</span></h4>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="my-12 bg-fuchsia-400 p-20 rounded-lg">
+                    <div class="my-12 bg-blue-400 p-20 rounded-lg">
                         <h2 class="font-medium text-5xl text-white mb-4">Please Deposit</h2>
-                        <input class="w-9/12 mb-2 p-1 rounded block" type="text" id="deposit-amount" placeholder="$ Amount you wanna deposit">
-                        <button id="btn-deposit" class="bg-fuchsia-700 duration-700 hover:bg-white text-white hover:text-fuchsia-600 px-6 py-2 rounded-lg  font-medium mt-2 hover:shadow-lg">Deposit</button>
+                        <input class="w-9/12 mb-2 p-1 rounded block" type="number" min='0' id ="deposit-amount" placeholder="$ Amount you wanna deposit">
+                        <button id="btn-deposit" class="bg-blue-700 duration-700 hover:bg-white text-white hover:text-blue-600 px-6 py-2 rounded-lg  font-medium mt-2 hover:shadow-lg">Deposit</button>
                     </div>
-                    <div class="my-12 bg-fuchsia-400 p-20 rounded-lg">
+                    <div class="my-12 bg-blue-400 p-20 rounded-lg">
                         <h2 class="font-medium text-5xl text-white mb-4">Please Withdraw</h2>
-                        <input class="w-9/12 mb-2 p-1 rounded block" type="text" id="withdraw-amount"  placeholder="$ Amount you wanna withdraw">
-                        <button id="btn-withdraw" class="bg-fuchsia-700 duration-700 hover:bg-white text-white hover:text-fuchsia-600 px-6 py-2 rounded-lg  font-medium mt-2 hover:shadow-lg">withdraw</button>
+                        <input class="w-9/12 mb-2 p-1 rounded block" type="number" min='0' id="withdraw-amount"  placeholder="$ Amount you wanna withdraw">
+                        <button id="btn-withdraw" class="bg-blue-700 duration-700 hover:bg-white text-white hover:text-blue-600 px-6 py-2 rounded-lg  font-medium mt-2 hover:shadow-lg">withdraw</button>
                     </div>
                 </div>
             </div>
         </section>
    </main>
    <script src="js/deposit.js"></script>
+   <script src="js/withdraw.js"></script>
 </body>
 </html>
